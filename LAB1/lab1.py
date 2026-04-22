@@ -1,6 +1,5 @@
 import random
 import math
-import numpy as np
 import matplotlib.pyplot as plt
 from collections import Counter
 
@@ -60,10 +59,7 @@ event_range = np.arange(0, max_event + 1)
 poisson = [(lam**k * math.exp(-lam)) / math.factorial(k) for k in event_range]
 
 print("Poission",poisson)
-# scale theory to match histogram (important for comparison)
-# scale = len(event_times)
-# poisson_scaled = [p * scale for p in poisson]
-# print("Poission",scale)
+
 
 # print("Poission_scaled",poisson_scaled)
 # plt.bar(hist.keys(),hist.values())
